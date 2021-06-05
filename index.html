@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Bài tập 1: tính tiền lương nhân viên</h1>
+            <label for="SoNgayLam">Số ngày làm</label>
+            <input type="text" id="SoNgayLam" placeholder="nhập số ngày làm">
+            <button type="button" class="btn btn-primary" id="TinhTien">Tính Tiền Lương</button>
+            <div class="alert alert-info">
+                <span id="TienLuong"></span><span> VND</span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <h1>Bài tập 2: tính giá trị trung bình</h1>
+            <label for="so--1">Nhập số thứ 1</label>
+            <input type="text" id="so--1" placeholder="nhập số thứ 1"><br>
+            <label for="so--2">Nhập số thứ 2</label>
+            <input type="text" id="so--2" placeholder="nhập số thứ 2"><br>
+            <label for="so--3">Nhập số thứ 3</label>
+            <input type="text" id="so--3" placeholder="nhập số thứ 3"><br>
+            <label for="so--4">Nhập số thứ 1</label>
+            <input type="text" id="so--4" placeholder="nhập số thứ 4"><br>
+            <label for="so--5">Nhập số thứ 1</label>
+            <input type="text" id="so--5" placeholder="nhập số thứ 5"><br>
+            
+            <button type="button" class="btn btn-lg btn-success" onclick="TinhTong()">Tính Trung Bình</button><br>
+            <div class="alert alert-info">
+                <span>Giá trị trung bình:</span><span id="TongTB"></span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <h1>Bài Tập 3: Quy đổi Tiền</h1>
+            <label for="soUSD">Nhập số USD cần đổi</label>
+            <input type="text" id="soUSD" placeholder="USD">
+            <label for="soUSD">USD</label><br>
+            
+            <button type="button" class="btn btn-primary" id="quydoi_click">Quy Đổi</button>
+
+            <div class="alert alert-primary" role="alert">
+                <span>quy đổi sang VND:</span><span id="quyDoi"></span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container">
+            <h1>Bài tập 4: Tính diện tích chu vi hình chữ nhật</h1>
+            <label for="chieuRong">Nhập số chiều rộng</label>
+            <input type="text" id="chieuRong" placeholder="chieuRong"><br>
+            <label for="chieuDai">Nhập số chiều dài</label>
+            <input type="text" id="chieuDai" placeholder="chieuDai"><br>
+            
+            <button type="button" class="btn btn-success" onclick="tinhChuVi()">Tính</button>
+            
+            <div class="alert alert-primary" role="alert">
+                <span>Chu vi Hình Chữ Nhật:</span><span id="chuVi"></span><br>
+                <span>Diện Tích Hình Chữ Nhật:</span><span id="dienTich"></span>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        
+        <div class="container">
+            <h1>Bài Tập 5: tính tong 2 ki so</h1>
+            <label for="so_int">Nhập số có 2 chữ số</label>
+            <input type="text" id="so_int" placeholder="so 2 chu so"><br>
+            
+            <button type="button" class="btn btn-warning" onclick="Total_int2()">Tính Tổng</button>
+
+            
+            <div class="alert alert-danger">
+                <span>Tổng số nhập vào:</span><span id="Tong_int2"></span>
+            </div>
+            
+            
+        </div>
+        
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
